@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>форми</title>
+</head>
+<body>
+  <main>
+    <form>
+        <fieldset>
+
+          <label for="user_name">Ваше ім'я:</label> <!--текст перед полем введення--><label for="user_name">Ваше ім'я:</label> <!--текст перед полем введення-->
+          <input type="text" placeholder="Ваше ім'я" name="name" id="user_name" required="required">
+          <!--поле введення тексту-->
+          <br> <br><!--перенесення рядка-->
+
+          <label for="user_age">Ваш вік:</label> <!--текст перед полем введення-->
+          <input type="number" placeholder="Ваш вік" name="age" id="user_age" min="0" max="150">
+          <!--поле введення віку-->
+
+          <br> <br><!--перенесення рядка-->
+
+          <label for="password">Ваш пароль:</label> <!--текст перед полем введення-->
+          <input type="password" placeholder="Ваш пароль" name="password" id="password"> <!--поле введення пароля-->
+
+          <br> <br><!--перенесення рядка-->
+
+          <label for="user_email">Ваш email:</label> <!--текст перед полем введення-->
+          <input type="email" placeholder="Ваш email" name="email" id="user_email"> <!--поле введення пошти-->
+
+          <br> <br><!--перенесення рядка-->
+
+          <label>
+            <input type="radio" name="gender" value="male">
+          </label>Чоловік
+          <label>
+            <input type="radio" name="gender" value="female">
+          </label>Не чоловік
+
+          <br> <br><!--перенесення рядка-->
+
+          <label>Запам'ятати мене:</label> <!--текст перед полем введення-->
+          <label>
+            <input type="checkbox" name="remember" value="remember">
+          </label> <!--чекбокс-->
+
+          <br> <br><!--перенесення рядка-->
+
+          <label>
+            <select name="city">
+              <option value="lviv">Львів</option> <!--впадающий список з містами-->
+              <option value="charkiv"> Харків</option>
+              <option value="odesa">Одеса</option>
+              <option value="dnipro">Дніпро</option>
+              <option value="chernigiv">Чернігів</option>
+            </select>
+          </label>
+
+          <br> <br><!--перенесення рядка-->
+
+          <label for="user_message">Ваше повідомлення:</label>
+          <textarea id="user_message" name="message"> <!--поле введення тексту-->
+                          </textarea>
+
+          <br> <br><!--перенесення рядка-->
+          <label>Ваш файл:</label> <!--текст перед полем введення-->
+          <input type="file">
+          <input type="submit">
+        </fieldset>
+    </form>
+    </main>
+  </body>
+  </html>
